@@ -9,8 +9,6 @@ export function AnimatedLetters({letterClass, strArray, idx}){
                 {strArray.map((char, i) => (
                     <span key={char + i} className={`${letterClass} _${i + idx}`}>
                         {char}
-    
-                    
                     </span>
                 ))}
             </span>

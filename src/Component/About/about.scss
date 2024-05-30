@@ -1,83 +1,14 @@
-// .stage-cube-cont{
-//     width: 50%;
-//     height: 100%;
-//     top: 0;
-//     padding-top: 18%;
-//     margin-left: 0;
-//     position: absolute;
-//     right: 0;
-//     overflow: hidden;
-
-// }
-
-// .cubespinner{
-//     animation-name: spincube;
-//     animation-timing-function: ease-in-out;
-//     animation-iteration-count: infinite;
-//     animation-duration: 12s;
-//     transform-style: preserve-3d;
-//     transform-origin: 100px 100px 0;
-//     margin-left: calc(50% - 100px);
-
-//     div{
-//         position: absolute;
-//         width: 200px;
-//         height: 200px;
-//         border: 1px solid #ccc;
-//         background: rgba(255, 255, 255, 0.4);
-
-//         font-size: 180px;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         box-shadow: 0 0 20px 0 lightyellow;
-//     }
-
-//     .face1{
-//         transform: translateZ(100px);
-//     }
-//     .face2{
-//         transform:rotateY(90deg) translateZ(100px);
-//     }
-
-//     .face3{
-//         transform:rotateY(90deg) rotateX(90deg) translateZ(100px);
-//     }
-
-//     .face4{
-//         transform:rotateY(180deg) rotateZ(90deg)translateZ(100px);
-//     }
-
-//     .face5{
-//         transform:rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-//     }
-// }
-
-// @keyframes spincube{
-//    from, 
-//    to{
-//     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-//    }
-//    16%{
-//     transform: rotateY(-90deg);
-//    }
-//    33%{
-//     transform: rotateY(-90deg) rotateZ(90deg);
-//    }
-//    50%{
-//     transform: rotateY(-180deg) rotateZ(90deg);
-//    }
-//    66%{
-//     transform: rotateY(-270deg) rotateZ(90deg);
-//    }
-//    83%{
-//     transform: rotateY(90deg) ;
-//    }
-// }
 
 .about-page{
   // color: #ccc;
   // color: #adadad;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  // border: 1px solid red;
+  // margin: 0;
+
+ 
 
   p{
     font-style: 13px;
@@ -108,11 +39,30 @@ li{
 }
 }
 
+.about-text-zone{
+  // width: 100%;
+  height: 100%;
+  // border: 2px solid green;
+  margin: 15px 15px;
+  // align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+// Spinner atyles
+
 .stage-cube-cont {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    display: flex; /* Centering the container using flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    // border: 1px solid yellow;
     position: relative;
     perspective: 1000px; /* Adds depth to the 3D transform */
+    align-items: center;
+    animation: fadeIn 1s 1.8 ease-in-out;
+    // animation: moveUpDown 4s infinite ease-in-out;
   }
   
   .cubespinner {
@@ -122,6 +72,7 @@ li{
     transform-style: preserve-3d;
     transform-origin: 100px 100px;
     animation: spincube 12s infinite ease-in-out;
+    align-items: center;
   
     div {
       position: absolute;
@@ -152,4 +103,150 @@ li{
     66% { transform: rotateY(-270deg) rotateX(90deg); }
     83% { transform: rotateY(-360deg) rotateX(90deg); }
   }
+
   
+  //  Skill cards styles
+  .skills-container {
+    width: 100%;
+   
+    // align-items: center;
+    // padding: 10px 20px;
+    // margin: 10px 70px;
+    // gap: 5px;
+    // border: 1px solid blue;
+  }
+
+  .skill-card-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    // border: 1px solid yellow;
+    margin: 10px 10px;
+    padding: 10px;
+  }
+  
+  .skill-card {
+    width: 200px;
+    padding: 10px;
+    // background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #edf993;
+    text-align: center;
+    opacity: 0; /* Initially hide the card */
+    animation: fadeIn 1s 1.8s forwards; /* Apply the fade-in animation */
+    align-items: center;
+    margin: 10px 15px;
+  }
+  
+  .skill-card .icon {
+    font-size: 180px;
+    margin-bottom: 3px;
+  }
+  
+  .skill-card .skill-name {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .skill-card:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .skill-card:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .skill-card:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .skill-card:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  .skill-card:nth-child(5) {
+    animation-delay: 1s;
+  }
+  .skill-card:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+  
+  .skill-card .icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-card .skill-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  /* Media query for small devices */
+@media (max-width: 768px) {
+  .stage-cube-cont {
+    display: none; /* Hide cube on small devices */
+  }
+
+  .skills-container {
+    display: flex; /* Show skills cards on small devices */
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+  .skill-card-holder{
+    width: 100%;
+    align-items: center;
+  }
+
+  .skill-card{
+    width: 200px;
+  }
+
+  .skill-card:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .skill-card:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .skill-card:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .skill-card:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  .skill-card:nth-child(5) {
+    animation-delay: 1s;
+  }
+  .skill-card:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+}
+
+/* Media query for medium and large devices */
+@media (min-width: 769px) {
+  .skills-container {
+    display: none; /* Hide skills cards on medium and large devices */
+  }
+
+  .stage-cube-cont {
+    display: block; /* Show cube on medium and large devices */
+    width: 100%;
+    height: 100vh;
+    display: flex; /* Centering the container using flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+}

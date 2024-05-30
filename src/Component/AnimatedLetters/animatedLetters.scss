@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .text-animate {
     display: inline-block;
     opacity: 0;
@@ -12,16 +14,25 @@
 
     &:hover {
         animation: rubberBand 1s;
-        color: #EFD993;
+        color: #FFF;
     }
 }
 
+
+// @for $i from 1 through 35 {
+//     .text-animate._#{$i} {
+//         animation-delay: #{$i * 0.1}s;
+//         // animation-delay: math.div($i, 10) * 1s;
+//         // animation-delay: #{$i / 10}s;
+//         // animation-delay: calc(#{$i} / 10s);
+//     }
+// }
 
 @for $i from 1 through 35 {
-    .text-animate._#{$i} {
-        animation-delay: #{$i * 0.1}s;
+    .text-animate:nth-child(#{$i}) {
+      animation-delay: math.div($i, 10) * 1s;
     }
-}
+  }
 
 @keyframes bounceIn {
     0% {
@@ -62,4 +73,10 @@
     100% {
         transform: scale(1);
     }
+}
+
+// Corrected transform property using math.div()
+.example-class {
+    $size: 16px;
+    transform: translate(0, math.div(-$size, 4));
 }

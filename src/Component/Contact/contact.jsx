@@ -4,6 +4,8 @@ import { AnimatedLetters } from '../AnimatedLetters';
 import emailjs from '@emailjs/browser';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import Loader from 'react-loaders';
+import { Sidebar } from '../Sidebar/sidebar';
+import PIX from '../../assets/ug.jpg'
 
 export function Contact() {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -11,8 +13,10 @@ export function Contact() {
     const refForm = useRef();
 
     useEffect(() => {
+        console.log('Initial letterClass:', letterClass); // Log initial state
         setTimeout(() => {
             setLetterClass('text-animate-hover');
+            console.log('Updated letterClass:', letterClass); // Log updated state
         }, 3000);
 
         // Simulate loading time
@@ -47,12 +51,15 @@ export function Contact() {
             {loading ? (
                 <Loader type='pacman' />
             ) : (
-                <div className="container-fluid contact-page my-5">
-                    <div className="row align-items-center my-5">
-                        <div className="col-10 col-lg-10 text-zone mx-5 my-5">
+               <div>
+                <Sidebar/>
+                 <div className="container-fluid contact-page my-3 ">
+                    <div className="row py-3 mx-1 contact-row">
+                        <div className="col-10 col-lg-10 text-zone contact-text-zone mx-3">
                             <h1 className='my-3' style={{color: '#EDF993'}}>
                                 <AnimatedLetters 
-                                    letterClass={letterClass}
+                                        letterClass={letterClass}
+                                    // letterClass='text-animate' // static class for testing
                                     strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
                                     idx={15}
                                 />
@@ -60,7 +67,7 @@ export function Contact() {
                             <p>
                                 I am available for freelance work or full-time positions. If you have a project you want to get started, need help with something, or just want to connect, feel free to reach out to me.
                             </p>
-                            <div className="contact-form align-items-center mx-5">
+                            <div className="contact-form align-items-center">
                                 <form ref={refForm} onSubmit={sendEmail}>
                                     <ul>
                                         <li className='half'>
@@ -82,8 +89,14 @@ export function Contact() {
                                 </form>
                             </div>
                         </div>
+                        {/* <div className='col-10 cpl-lg-5'>
+                            <div className='contact-image'>
+                                <img src={PIX} alt="picture" />
+                            </div>
+                        </div> */}
                     </div>
                 </div>
+               </div>
             )}
         </>
     );
