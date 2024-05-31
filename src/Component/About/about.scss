@@ -14,9 +14,6 @@
     font-style: 13px;
      color: #FFF;
      font-family: "IBM Plex Mono", monospace;
-
-    // color: #fff;
-    // font-family: sans-serif;
     font-weight: 300;
     min-width: fit-content;
     animation: pulse 1s;
@@ -49,27 +46,15 @@ li{
   padding: 20px;
 }
 .projects{
-  // border: 1px solid yellow;
   width: 100%;
   align-items: center;
-  // text-align: start;
-  // text-align: center;
+
 
   ul{
-    // border: 1px solid blue;
-    // width: 100%;
+   
     align-items: flex-start;
 
-    // li{
-    //   align-items: center;
-    //   border: 1px solid red;
-    //   list-style: none;
-    //   // width: 50%;
-    //   text-align: center;
-    //   margin: 0 20px;
-    //   // margin-right: 10px;
-    // }
-
+  
   }
 }
 
@@ -132,12 +117,6 @@ li{
   //  Skill cards styles
   .skills-container {
     width: 100%;
-   
-    // align-items: center;
-    // padding: 10px 20px;
-    // margin: 10px 70px;
-    // gap: 5px;
-    // border: 1px solid blue;
   }
 
   .skill-card-holder{
@@ -154,7 +133,6 @@ li{
   .skill-card {
     width: 200px;
     padding: 10px;
-    // background-color: #f9f9f9;
     border: 1px solid #ccc;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
@@ -220,6 +198,7 @@ li{
   .stage-cube-cont {
     display: none; /* Hide cube on small devices */
   }
+  
 
   .skills-container {
     display: flex; /* Show skills cards on small devices */
@@ -229,15 +208,20 @@ li{
     align-items: center;
     padding: 10px 30px;
   }
+  
 
   .skill-card-holder{
     width: 100%;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .skill-card{
-    width: 200px;
-  }
+  // .skill-card{
+  //   width: 100%; /* Full width for small devices */
+  //   margin: 10px 0; /* Adjust margin for better spacing */
+  // }
 
   .skill-card:nth-child(1) {
     animation-delay: 0.2s;
