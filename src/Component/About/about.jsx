@@ -43,14 +43,17 @@ export function About() {
                 <div>
                   <h3 style={{ color: '#EDF993' }}>My Journey</h3>
                   <p>My journey into web development started 11 months ago when I discovered my passion for technology. Since then, I've been on a continuous learning path, staying up-to-date with the latest industry trends and best practices. This commitment has helped me deliver high-quality projects.</p>
-                  <div>
+                  <div className="projects">
                     <h3 style={{ color: '#EDF993' }}>Projects and Experience</h3>
                     <p>Over time I have had the pleasure of working on diverse projects. Some of my notable projects include:</p>
                     <ul>
-                      <li><strong style={{ color: '#EDF993' }}>Project A:</strong> A news and media web app that aims at delivering content, organizing contents into categories for easy exploration, storing of news links for future access, and creating a community where users can engage.
+                      <li className="first-project"><strong style={{ color: '#EDF993' }}>Project A:</strong> A news and media web app that aims at delivering content, organizing contents into categories for easy exploration, storing of news links for future accesss and  creating a community where users can engage.
+                          <br />
+                        <span>
                         <a href="https://news-media-app.vercel.app/">https://news-media-app.vercel.app/</a>
+                        </span>
                       </li>
-                      <li><strong style={{ color: '#EDF993' }}>Project B:</strong> A movie search app that allows users access to some recent movies.
+                      <li><strong style={{ color: '#EDF993' }}>Project B:</strong> A movie search app that allows users access to some recent movies. <br />
                         <a href="https://movie-peach-phi.vercel.app/">https://movie-peach-phi.vercel.app/</a>
                       </li>
                       <li><strong style={{ color: '#EDF993' }}>Project C:</strong> A text to speech converter web app</li>

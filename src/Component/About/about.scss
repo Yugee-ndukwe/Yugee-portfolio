@@ -48,6 +48,30 @@ li{
   text-align: center;
   padding: 20px;
 }
+.projects{
+  // border: 1px solid yellow;
+  width: 100%;
+  align-items: center;
+  // text-align: start;
+  // text-align: center;
+
+  ul{
+    // border: 1px solid blue;
+    // width: 100%;
+    align-items: flex-start;
+
+    // li{
+    //   align-items: center;
+    //   border: 1px solid red;
+    //   list-style: none;
+    //   // width: 50%;
+    //   text-align: center;
+    //   margin: 0 20px;
+    //   // margin-right: 10px;
+    // }
+
+  }
+}
 
 // Spinner atyles
 

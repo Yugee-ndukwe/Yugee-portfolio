@@ -34,7 +34,7 @@ export function Home(){
 
             <div className="container-fluid home-page ">
                 <div className="row  text-img-container">
-                    <div className="col-10 col-lg-5 text-zone  mx-5">
+                    <div className="col-12 col-lg-5 text-zone  mx-5">
                         <h1 style={{color: '#EDF993'}}>
                             <br />
                           <span className={letterClass}>H</span>
@@ -60,7 +60,7 @@ export function Home(){
                         </Link>
 
                     </div>
-                    <div className="col-10 col-lg-6 img-container">
+                    <div className="col-12 col-lg-6 img-container">
                         <img className='user-img' src={IMG} alt="pix" />
                     </div>
                 </div>
