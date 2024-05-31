@@ -52,7 +52,7 @@
     
     .top-tags {
       bottom: auto;
-      top: 50%;
+      top: 25%;
     }
     .tags{
     color: #EDF993;
@@ -65,17 +65,9 @@
       font-family: "La Belle Aurore", "cursive";
   
   }
-  .bottom-tags{
-    // top: -10%;
-    bottom: -350px;
-  }
   
   .bottom-tags-html {
-      // position: absolute;
-      bottom: 100%;
-      // left: 120px;
       margin-left: -10px;
-      // top: 100%;
     }
   
   
@@ -117,7 +109,7 @@
   
   .bottom-tags-html {
       // position: absolute;
-      bottom: 100%;
+      // bottom: 100%;
       // left: 120px;
       margin-left: -10px;
       // top: 100%;
@@ -158,12 +150,12 @@
   }
   .bottom-tags{
     // top: -10%;
-    bottom: -300px;
+    bottom: -400px;
   }
   
   .bottom-tags-html {
       // position: absolute;
-      bottom: 100%;
+      // bottom: 100%;
       // left: 120px;
       margin-left: -10px;
       // top: 100%;
@@ -206,12 +198,12 @@
 }
 .bottom-tags{
   // top: -10%;
-  bottom: -450px;
+  bottom: -300px;
 }
 
 .bottom-tags-html {
     // position: absolute;
-    bottom: 100%;
+    // bottom: 100%;
     // left: 120px;
     margin-left: -10px;
     // top: 100%;
