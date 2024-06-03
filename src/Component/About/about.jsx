@@ -50,14 +50,19 @@ export function About() {
                       <li className="first-project"><strong style={{ color: '#EDF993' }}>Project A:</strong> A news and media web app that aims at delivering content, organizing contents into categories for easy exploration, storing of news links for future accesss and  creating a community where users can engage.
                           <br />
                         <span>
-                        <a href="https://news-media-app.vercel.app/">https://news-media-app.vercel.app/</a>
+                        <a href="https://news-media-app.vercel.app/" target="_blank">https://news-media-app.vercel.app/</a>
                         </span>
                       </li>
                       <li><strong style={{ color: '#EDF993' }}>Project B:</strong> A movie search app that allows users access to some recent movies. <br />
-                        <a href="https://movie-peach-phi.vercel.app/">https://movie-peach-phi.vercel.app/</a>
+                        <a href="https://movie-peach-phi.vercel.app/" target="_blank">https://movie-peach-phi.vercel.app/</a>
                       </li>
-                      <li><strong style={{ color: '#EDF993' }}>Project C:</strong> A text to speech converter web app</li>
-                      <li><strong style={{ color: '#EDF993' }}>Project D:</strong> A charity organization web app built with just HTML and CSS.</li>
+                      <li><strong style={{ color: '#EDF993' }}>Project C:</strong> A text to speech converter web app.
+                      <a target="_blank" href="https://github.com/Yugee-ndukwe/text-to-speech-converter.io"></a>
+                      </li>
+                      <li><strong style={{ color: '#EDF993' }}>Project D:</strong> A charity organization web app built with just HTML and CSS. <br />
+                      <a target="_blank" href="Yugee-ndukwe.github.io/Bootstrap/"></a>
+
+                      </li>
                     </ul>
                   </div>
                 </div>

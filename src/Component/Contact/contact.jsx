@@ -109,17 +109,17 @@ export function Contact() {
                                             <h3>Social Links</h3>
                                             <div className="social-icon my-5">
                                             <div>
-                                                    <a href="https://github.com/Yugee-ndukwe"><FontAwesomeIcon icon={faGithub} color='fff'/></a>
+                                                    <a href="https://github.com/Yugee-ndukwe" target='_blank'><FontAwesomeIcon icon={faGithub} color='fff'/></a>
                                                 </div>
                                                 <div>
-                                                    <a href="www.linkedin.com/in/ugonma-ndukwe-03b434229"><FontAwesomeIcon icon={faLinkedin} color='fff'/></a>
+                                                    <a href="www.linkedin.com/in/ugonma-ndukwe-03b434229" target='_blank'><FontAwesomeIcon icon={faLinkedin} color='fff'/></a>
                                                 </div>
                                                 <div>
-                                                    <a href="https://x.com/yugee_ndukwe?t=R941NDRaNfef6C1dn7KVmg&s=08"><FontAwesomeIcon icon={faTwitter} color='fff'/></a>
+                                                    <a href="https://x.com/yugee_ndukwe?t=R941NDRaNfef6C1dn7KVmg&s=08" target='_blank'><FontAwesomeIcon icon={faTwitter} color='fff'/></a>
                                                 </div>
                                                 
                                                 <div>
-                                                    <a href="https://www.instagram.com/yugeendukwe?igsh=cWxmbGhlNm9tamEw"><FontAwesomeIcon icon={faInstagram} color='fff'/></a>
+                                                    <a href="https://www.instagram.com/yugeendukwe?igsh=cWxmbGhlNm9tamEw" target='_blank'><FontAwesomeIcon icon={faInstagram} color='fff'/></a>
                                                 </div>
                                                 {/* <div>
                                                     <a href="https://www.facebook.com/profile.php?id=100078709760295&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} color='fff'/></a>
