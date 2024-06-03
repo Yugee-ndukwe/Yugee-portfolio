@@ -1,7 +1,7 @@
 .contact-page{
     // color: #FFF;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     // padding: 0 10px;
     // border: 1px solid red;
     // align-items: center;
@@ -32,11 +32,18 @@
             animation-delay: 1.2s;
     }
 }
+h3{
+    color: #EDF993;
+    font-size: 20px;
+    letter-spacing: 3px;
+    animation: pulse 1s 1.8s backwards;
+    font-family: "Nanum Gothic";
+}
 }
 
 .contact-form{
     width: 100%;
-    height: 100%;
+    // height: 100%;
     padding: 0 10px;
     // align-items: center;
 
@@ -133,117 +140,64 @@
     }
 }
 
+@keyframes swing {
+    20% { transform: rotate3d(0, 0, 1, 15deg); }
+    40% { transform: rotate3d(0, 0, 1, -10deg); }
+    60% { transform: rotate3d(0, 0, 1, 5deg); }
+    80% { transform: rotate3d(0, 0, 1, -5deg); }
+    100% { transform: rotate3d(0, 0, 1, 0deg); }
+  }
 
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .pulse-animation {
+    animation: pulse 1s infinite;
+  }
+  
 
-// .contact-form{
-//     width: 100%;
-//     margin-top: 20px;
+.contact-links{
+    width: 100%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in;
+    // align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
-//     ul{
-//         padding: 0;
-//         margin: 0;
+.contact-links.visible {
+    opacity: 1; /* Make visible when scrolled into view */
+    animation: pulse 1s ease;
+  }
 
-//         li{
-//             padding: 0;
-//             margin: 0;
-//             list-style: none;
-//             margin-bottom: 10px;
-//             overflow: hidden;
-//             display: block;
-//             position: relative;
-//             opacity: 0;
-//             animation: fadeInup 2s 2s;
-//             animation-fill-mode: forwards;
-//             clear: both;
-//         }
-//         li.half{
-//             width: 49%;
-//             margin-left: 2%;
-//             float: left;
-//             clear: none;
+.social-icon{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    animation: slideInLeft 1s 1.8s ease-in;
+   
 
-//             &first-child{
-//                 margin-left: 0;
+    a{
+        text-decoration: none;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #ccc;
+        padding: 3px 7px;
+        display: inline-block;
+        transition: transform 0.3s ease;
 
-//             }
-//         }
-//     }
+        &:hover{
+           color: #EDF993;
+           animation: swing 1.2s ease;
+          
+        }
 
-    // input[type='text'],
-    // input[type='email'] {
-    //     width: 100%;
-    //     border: 0;
-    //     background: #115173;
-    //     height: 50px;
-    //     font-size: 16px;
-    //     color: #FFF;
-    //     padding: 0 20px;
-    //     box-sizing: border-box;
-    // }
-
-    // textarea{
-    //     width: 100%;
-    //     border: 0;
-    //     background: #115173;
-    //     height: 50px;
-    //     font-size: 16px;
-    //     color: #FFF;
-    //     padding: 20px;
-    //     min-height: 150px;
-    //     box-sizing: border-box;
-        
-    // }
-
-    // .flat-button{
-    //     color: #ffd700;
-    //     background: 0  0;
-    //     font: 11px;
-    //     letter-spacing: 3px;
-    //     text-decoration: none;
-    //     padding: 8px 10px;
-    //     border: 1px solid #ffd700;
-    //     float: left;
-    //     border-radius: 4px;
-    // }
-// }
-
-// .info-map{
-//     position: absolute;
-//     background-color: #000;
-//     top: 50px;
-//     right: 30%;
-//     z-index: 999999;
-//     width: 267px;
-//     padding: 20px;
-//     color: #FFF;
-//     font-size: 16px;
-//     font-family: 'Hind';
-//     font-weight: 300;
-//     opacity: 0;
-//     animation: fadeIn 1s 1.5s;
-//     animation-fill-mode: forwards;
-
-//     span{
-//         font-size: 16px;
-//         display: block;
-//         padding-top: 20px;
-//         color: #ffd700;
-//         }
-// }
-
-// .map-wrap{
-//     background: rgba(0, 253, 216, 0.1);
-//     float: right;
-//     width: 53%;
-//     height: 100%;
-// }
-
-// .leaflet-container{
-//     width: 100%;
-//     height: 100%;
-//     position: relative;
-//     opacity: 0;
-//     animation: backInRight 1s 1.2s;
-//     animation-fill-mode: forwards;
-// }
+    }
+}
 

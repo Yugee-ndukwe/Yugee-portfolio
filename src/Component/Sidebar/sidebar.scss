@@ -4,12 +4,18 @@
     background: transparent;
     
 }
+
 .logo-container{
     width: 30%;
     height: 30%;
     position: relative;
     left: 0;
     right: 0;
+}
+
+.bar-icon{
+    color: #fff;
+    font-size: 16px;
 }
 .logo{
     width: 20%;
@@ -100,120 +106,3 @@
 }
 
 
-
-
-
-// .navbar {
-//     background-color: #000;
-//     position: absolute;
-//     width: 60px;
-//     top: 0;
-//     left: 0;
-//     z-index: 3;
-//     height: 100vh;
-//     min-height: 500px;
-//     text-align: center;
-// }
-
-// .logo {
-//     display: block;
-//     padding: 0 8px;
-//     position: relative;
-//     bottom: 15%;
-//     right: 13%;
-// }
-
-// .image {
-//     width: 100%;
-// }
-
-// .logo-img {
-//     width: 50%;
-// }
-
-// .logo-title {
-//     color: #EFD993;
-//     right: 0;
-//     left: 48%;
-//     top: 48%;
-//     position: absolute;
-//     font-size: 20px;
-// }
-
-// nav {
-//     position: absolute;
-//     display: block;
-//     width: 100%;
-//     margin-top: -120px;
-//     top: 50%;
-//     height: 210px;
-// }
-
-// a {
-//     line-height: 51px;
-//     font-size: 23px;
-//     display: block;
-//     height: 51px;
-//     position: relative;
-// }
-
-// .nav-icon {
-//     transition: all 0.3s ease-out;
-//     position: relative;
-
-//     &:hover {
-//         color: #EFD993;
-//     }
-
-//     &::after {
-//         content: "";
-//         display: block;
-//         font-size: 9px;
-//         letter-spacing: 2px;
-//         position: absolute;
-//         bottom: -20px;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         width: 100%;
-//         opacity: 0;
-//         transition: all 0.3s ease-out;
-//     }
-
-//     &:hover::after {
-//         opacity: 1;
-//     }
-
-//     &.home-icon::after {
-//         content: "Home";
-//     }
-    
-//     &.about-icon::after {
-//         content: "About";
-//     }
-
-//     &.contact-icon::after {
-//         content: "Contact";
-//     }
-// }
-
-// a:active {
-//     color: #EFD993;
-// }
-
-// ul {
-//     display: block;
-//     position: relative;
-//     list-style: none;
-//     width: 100%;
-//     top: 60px;
-//     right: 12px;
-//     margin: 0;
-//     padding: 0;
-//     text-align: center;
-// }
-
-// li a {
-//     display: block;
-//     padding: 7px 0;
-//     line-height: 15px;
-// }

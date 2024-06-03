@@ -2,8 +2,9 @@ import './sidebar.scss';
 import LOGO from '../../assets/yugee.png';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBars,faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+// import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export function Sidebar() {
     return (
@@ -13,8 +14,12 @@ export function Sidebar() {
                     <img className='logo' src={LOGO} alt="logo" />
                     <span className='logo-title'> ugee</span>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <span><faBars /></span>
+                <Navbar.Toggle aria-controls="basic-navbar-nav">
+                    <FontAwesomeIcon icon={faBars} color="#EFD993" />
+                </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
+                   
                     <Nav className="">
                         <NavLink
                             exact="true"
