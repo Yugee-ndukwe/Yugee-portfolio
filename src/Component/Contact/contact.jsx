@@ -112,7 +112,7 @@ export function Contact() {
                                                     <a href="https://github.com/Yugee-ndukwe" target='_blank'><FontAwesomeIcon icon={faGithub} color='fff'/></a>
                                                 </div>
                                                 <div>
-                                                    <a href="www.linkedin.com/in/ugonma-ndukwe-03b434229" target='_blank'><FontAwesomeIcon icon={faLinkedin} color='fff'/></a>
+                                                    <a href="www.linkedin.com/in/ugonma-ndukwe-03b434229" ><FontAwesomeIcon icon={faLinkedin} color='fff'/></a>
                                                 </div>
                                                 <div>
                                                     <a href="https://x.com/yugee_ndukwe?t=R941NDRaNfef6C1dn7KVmg&s=08" target='_blank'><FontAwesomeIcon icon={faTwitter} color='fff'/></a>
